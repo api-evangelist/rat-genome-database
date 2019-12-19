@@ -1,0 +1,1771 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.1",
+        "title": "Rat Genome Database",
+        "description": "The RGD REST API provides programmatic access to information and annotation stored in the Rat Genome Database",
+        "termsOfService": "http:\/\/rgd.mcw.edu\/wg\/citing-rgd"
+    },
+    "servers": [
+        "httpsrest.rgd.mcw.edu\/rgdws"
+    ],
+    "paths": {
+        "\/annotations\/accId\/{rgdId}": {
+            "get": {
+                "summary": "Returns a list ontology term accession IDs annotated to an rgd object",
+                "description": "",
+                "operationId": "GetTermAccIdsUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "rgdId",
+                        "in": "path",
+                        "description": "RGD ID"
+                    }
+                ]
+            }
+        },
+        "\/annotations\/count\/{accId}\/{includeChildren}": {
+            "get": {
+                "summary": "Returns annotation count for ontology accession ID",
+                "description": "",
+                "operationId": "GetAnnotationCountByAccIdUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accId",
+                        "in": "path",
+                        "description": "Ontology term accession ID"
+                    },
+                    {
+                        "name": "includeChildren",
+                        "in": "path",
+                        "description": "true: return annotations for the term and children, false: return annotations for the term only "
+                    }
+                ]
+            }
+        },
+        "\/annotations\/count\/{accId}\/{speciesTypeKey}\/{includeChildren}": {
+            "get": {
+                "summary": "Returns annotation count for ontology accession ID and speicies",
+                "description": "",
+                "operationId": "GetAnnotationCountByAccIdAndSpeciesUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accId",
+                        "in": "path",
+                        "description": "Ontology term accession ID"
+                    },
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "includeChildren",
+                        "in": "path",
+                        "description": "true: return annotations for the term and children, false: return annotations for the term only "
+                    }
+                ]
+            }
+        },
+        "\/annotations\/count\/{accId}\/{speciesTypeKey}\/{includeChildren}\/{objectType}": {
+            "get": {
+                "summary": "Returns annotation count for ontology accession ID and object type",
+                "description": "",
+                "operationId": "GetAnnotationCountByAccIdAndObjectTypeUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accId",
+                        "in": "path",
+                        "description": "Ontology term accession ID"
+                    },
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "includeChildren",
+                        "in": "path",
+                        "description": "true: return annotations for the term and children, false: return annotations for the term only "
+                    },
+                    {
+                        "name": "objectType",
+                        "in": "path",
+                        "description": "A list of object types can be found using the lookup service"
+                    }
+                ]
+            }
+        },
+        "\/annotations\/reference\/{refRgdId}": {
+            "get": {
+                "summary": "Returns a list of annotations for a reference",
+                "description": "",
+                "operationId": "GetAnnotsByRefrerenceUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "refRgdId",
+                        "in": "path",
+                        "description": "Reference RGD ID"
+                    }
+                ]
+            }
+        },
+        "\/annotations\/rgdId\/{rgdId}": {
+            "get": {
+                "summary": "Returns a list of annotations by RGD ID",
+                "description": "",
+                "operationId": "GetAnnotationsByRgdIdUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "rgdId",
+                        "in": "path",
+                        "description": "RGD ID"
+                    }
+                ]
+            }
+        },
+        "\/annotations\/rgdId\/{rgdId}\/{ontologyPrefix}": {
+            "get": {
+                "summary": "Returns a list of annotations by RGD ID and ontology prefix",
+                "description": "",
+                "operationId": "GetAnnotationsByRgdIdAndOntologyUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "rgdId",
+                        "in": "path",
+                        "description": "RGD ID"
+                    },
+                    {
+                        "name": "ontologyPrefix",
+                        "in": "path",
+                        "description": "Ontology Prefix.  The prefix can be found left of the semicolon in an ontology term accession ID.  As an example, term accession PW:0000034 has the ontology prefix PW"
+                    }
+                ]
+            }
+        },
+        "\/annotations\/{accId}\/{rgdId}": {
+            "get": {
+                "summary": "Returns a list of annotations by RGD ID and ontology term accession ID",
+                "description": "",
+                "operationId": "GetAnnotationsByAccIdAndRgdIdUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accId",
+                        "in": "path",
+                        "description": "Ontology term accession ID"
+                    },
+                    {
+                        "name": "rgdId",
+                        "in": "path",
+                        "description": "RGD ID"
+                    }
+                ]
+            }
+        },
+        "\/annotations\/{accId}\/{speciesTypeKey}\/{includeChildren}": {
+            "get": {
+                "summary": "Returns a list annotations for an ontology term or a term and it's children",
+                "description": "",
+                "operationId": "GetAnnotationsUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accId",
+                        "in": "path",
+                        "description": "Ontology term accession ID"
+                    },
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "includeChildren",
+                        "in": "path",
+                        "description": "true: return annotations for the term and children, false: return annotations for the term only "
+                    }
+                ]
+            }
+        },
+        "\/genes\/affyId\/{affyId}\/{speciesTypeKey}": {
+            "get": {
+                "summary": "Return a list of genes for an affymetrix ID",
+                "description": "",
+                "operationId": "GetGenesByAffyIdUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "affyId",
+                        "in": "path",
+                        "description": "Affymetrix ID"
+                    },
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    }
+                ]
+            }
+        },
+        "\/genes\/alias\/{aliasSymbol}\/{speciesTypeKey}": {
+            "get": {
+                "summary": "Return a list of genes for an alias and species",
+                "description": "",
+                "operationId": "GetGenesByAliasSymbolUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "aliasSymbol",
+                        "in": "path",
+                        "description": "Gene alias symbol"
+                    },
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    }
+                ]
+            }
+        },
+        "\/genes\/allele\/{rgdId}": {
+            "get": {
+                "summary": "Return a list of gene alleles",
+                "description": "",
+                "operationId": "GetGeneAllelesUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "rgdId",
+                        "in": "path",
+                        "description": "RGD ID"
+                    }
+                ]
+            }
+        },
+        "\/genes\/annotation\/{accId}\/{speciesTypeKey}": {
+            "get": {
+                "summary": "Return a list of genes annotated to an ontology term",
+                "description": "",
+                "operationId": "GetGenesAnnotatedUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accId",
+                        "in": "path",
+                        "description": "Ontology term accession ID"
+                    },
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    }
+                ]
+            }
+        },
+        "\/genes\/keyword\/{keyword}\/{speciesTypeKey}": {
+            "get": {
+                "summary": "Return a list of genes by keyword and species type key",
+                "description": "",
+                "operationId": "GetGenesByKeywordUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "keyword",
+                        "in": "path",
+                        "description": "Search keyword"
+                    },
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    }
+                ]
+            }
+        },
+        "\/genes\/map\/{mapKey}": {
+            "get": {
+                "summary": "Return a list of all genes with position information for an assembly",
+                "description": "",
+                "operationId": "GetGeneByMapKeyUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "mapKey",
+                        "in": "path",
+                        "description": "A list of RGD assembly map keys can be found in the lookup service"
+                    }
+                ]
+            }
+        },
+        "\/genes\/ortholog\/{rgdId}": {
+            "get": {
+                "summary": "Return a list of gene orthologs",
+                "description": "",
+                "operationId": "GetGeneOrthologsUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "rgdId",
+                        "in": "path",
+                        "description": "RGD ID"
+                    }
+                ]
+            }
+        },
+        "\/genes\/species\/{speciesTypeKey}": {
+            "get": {
+                "summary": "Return a list of all genes for a species in RGD",
+                "description": "",
+                "operationId": "GetGenesBySpeciesUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    }
+                ]
+            }
+        },
+        "\/genes\/{chr}\/{start}\/{stop}\/{mapKey}": {
+            "get": {
+                "summary": "Return a list of genes position and map key",
+                "description": "",
+                "operationId": "GetGenesByPositionUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "chr",
+                        "in": "path",
+                        "description": "Chromosome"
+                    },
+                    {
+                        "name": "start",
+                        "in": "path",
+                        "description": "Start Position"
+                    },
+                    {
+                        "name": "stop",
+                        "in": "path",
+                        "description": "Stop Position"
+                    },
+                    {
+                        "name": "mapKey",
+                        "in": "path",
+                        "description": "A list of RGD assembly map keys can be found in the lookup service"
+                    }
+                ]
+            }
+        },
+        "\/genes\/{rgdId}": {
+            "get": {
+                "summary": "Get a gene record by RGD ID",
+                "description": "",
+                "operationId": "GetGeneByRgdIdUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "rgdId",
+                        "in": "path",
+                        "description": "RGD ID"
+                    }
+                ]
+            }
+        },
+        "\/genes\/{symbol}\/{speciesTypeKey}": {
+            "get": {
+                "summary": "Get a gene record by symbol and species type key",
+                "description": "",
+                "operationId": "GetGeneBySymbolUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "symbol",
+                        "in": "path",
+                        "description": "Gene Symbol"
+                    },
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    }
+                ]
+            }
+        },
+        "\/lookup\/geneTypes": {
+            "get": {
+                "summary": "Returns a list of gene types avialable in RGD",
+                "description": "",
+                "operationId": "GetGeneTypesUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/lookup\/maps\/{speciesTypeKey}": {
+            "get": {
+                "summary": "Return a list assembly maps for a species",
+                "description": "",
+                "operationId": "GetMapsUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    }
+                ]
+            }
+        },
+        "\/lookup\/speciesTypeKeys": {
+            "get": {
+                "summary": "Return a Map of species type keys available in RGD",
+                "description": "",
+                "operationId": "GetSpeciesTypesUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/pathways\/diagrams\/search\/{searchString}": {
+            "get": {
+                "summary": "Return a list of pathways based on search term",
+                "description": "",
+                "operationId": "SearchPathwaysUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "searchString",
+                        "in": "path",
+                        "description": "Free text search string"
+                    }
+                ]
+            }
+        },
+        "\/pathways\/diagramsForCategory\/{category}": {
+            "get": {
+                "summary": "Return a list of pathways based on category provided",
+                "description": "",
+                "operationId": "GetPathwaysWithDiagramsForCategoryUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "category",
+                        "in": "path",
+                        "description": "Pathway Category"
+                    }
+                ]
+            }
+        },
+        "\/phenotype\/phenominer\/chart\/{speciesTypeKey}\/{termString}": {
+            "get": {
+                "summary": "Return a list of pathways based on search term and species type.  3=rat 4=chinchilla",
+                "description": "",
+                "operationId": "GetChartInfoUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "termString",
+                        "in": "path",
+                        "description": "List of term accession IDs"
+                    }
+                ]
+            }
+        },
+        "\/qtls\/{chr}\/{start}\/{stop}\/{mapKey}": {
+            "get": {
+                "summary": "Returns a list QTL for given position and assembly map",
+                "description": "",
+                "operationId": "GetQtlListByPositionUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "chr",
+                        "in": "path",
+                        "description": "Chromosome"
+                    },
+                    {
+                        "name": "start",
+                        "in": "path",
+                        "description": "Start Position"
+                    },
+                    {
+                        "name": "stop",
+                        "in": "path",
+                        "description": "Stop Position"
+                    },
+                    {
+                        "name": "mapKey",
+                        "in": "path",
+                        "description": "A list of RGD assembly map keys can be found in the lookup service"
+                    }
+                ]
+            }
+        },
+        "\/qtls\/{rgdId}": {
+            "get": {
+                "summary": "Return a QTL for provided RGD ID",
+                "description": "",
+                "operationId": "GetQTLByRgdIdUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "rgdId",
+                        "in": "path",
+                        "description": "RGD ID"
+                    }
+                ]
+            }
+        },
+        "\/stats\/count\/activeObject\/{speciesTypeKey}\/{dateYYYYMMDD}": {
+            "get": {
+                "summary": "Count of active objects by type, for specified species and date",
+                "description": "",
+                "operationId": "GetActiveObjectCountUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateYYYYMMDD",
+                        "in": "path",
+                        "description": "dateYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/count\/geneType\/{speciesTypeKey}\/{dateYYYYMMDD}": {
+            "get": {
+                "summary": "Count of gene types, for specified species and date",
+                "description": "",
+                "operationId": "GetGeneTypeCountUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateYYYYMMDD",
+                        "in": "path",
+                        "description": "dateYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/count\/objectStatus\/{speciesTypeKey}\/{dateYYYYMMDD}": {
+            "get": {
+                "summary": "Count of objects with given status, for specified species and date",
+                "description": "",
+                "operationId": "GetObjectStatusCountUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateYYYYMMDD",
+                        "in": "path",
+                        "description": "dateYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/count\/objectWithRefSeq\/{speciesTypeKey}\/{dateYYYYMMDD}": {
+            "get": {
+                "summary": "Count of objects with reference sequence(s), by object type, for specified species and date",
+                "description": "",
+                "operationId": "GetObjectsWithRefSeqCountUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateYYYYMMDD",
+                        "in": "path",
+                        "description": "dateYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/count\/objectWithReference\/{speciesTypeKey}\/{dateYYYYMMDD}": {
+            "get": {
+                "summary": "Count of objects with reference, by object type, for specified species and date",
+                "description": "",
+                "operationId": "GetObjectsWithReferenceCountUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateYYYYMMDD",
+                        "in": "path",
+                        "description": "dateYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/count\/objectWithXdb\/{speciesTypeKey}\/{objectKey}\/{dateYYYYMMDD}": {
+            "get": {
+                "summary": "Count of objects with external database ids, by database id, for specified species, object type and date",
+                "description": "",
+                "operationId": "GetObjectsWithXDBsCountUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "objectKey",
+                        "in": "path",
+                        "description": "objectKey"
+                    },
+                    {
+                        "name": "dateYYYYMMDD",
+                        "in": "path",
+                        "description": "dateYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/count\/proteinInteraction\/{speciesTypeKey}\/{dateYYYYMMDD}": {
+            "get": {
+                "summary": "Count of protein interactions, for specified species and date",
+                "description": "",
+                "operationId": "GetProteinInteractionCountUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateYYYYMMDD",
+                        "in": "path",
+                        "description": "dateYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/count\/qtlInheritanceType\/{speciesTypeKey}\/{dateYYYYMMDD}": {
+            "get": {
+                "summary": "Count of strains, by qtl inheritance type, for specified species and date",
+                "description": "",
+                "operationId": "GetQtlInheritanceTypeCountUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateYYYYMMDD",
+                        "in": "path",
+                        "description": "dateYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/count\/retiredObject\/{speciesTypeKey}\/{dateYYYYMMDD}": {
+            "get": {
+                "summary": "Count of retired objects by type, for specified species and date",
+                "description": "",
+                "operationId": "GetRetiredObjectCountUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateYYYYMMDD",
+                        "in": "path",
+                        "description": "dateYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/count\/strainType\/{speciesTypeKey}\/{dateYYYYMMDD}": {
+            "get": {
+                "summary": "Count of strain types, for specified species and date",
+                "description": "",
+                "operationId": "GetStrainTypeCountUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateYYYYMMDD",
+                        "in": "path",
+                        "description": "dateYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/count\/withdrawnObject\/{speciesTypeKey}\/{dateYYYYMMDD}": {
+            "get": {
+                "summary": "Count of withdrawn objects by type, for specified species and date",
+                "description": "",
+                "operationId": "GetWithdrawnObjectCountUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateYYYYMMDD",
+                        "in": "path",
+                        "description": "dateYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/count\/xdb\/{speciesTypeKey}\/{dateYYYYMMDD}": {
+            "get": {
+                "summary": "Count of external database ids, for specied species and date",
+                "description": "",
+                "operationId": "GetXdbsCountUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateYYYYMMDD",
+                        "in": "path",
+                        "description": "dateYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/diff\/activeObject\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}": {
+            "get": {
+                "summary": "Count difference of active objects, by type, for specified species and date range",
+                "description": "",
+                "operationId": "GetActiveObjectDiffUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateFromYYYYMMDD",
+                        "in": "path",
+                        "description": "dateFromYYYYMMDD"
+                    },
+                    {
+                        "name": "dateToYYYYMMDD",
+                        "in": "path",
+                        "description": "dateToYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/diff\/geneType\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}": {
+            "get": {
+                "summary": "Count difference of gene types, for specified species and date range",
+                "description": "",
+                "operationId": "GetGeneTypeDiffUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateFromYYYYMMDD",
+                        "in": "path",
+                        "description": "dateFromYYYYMMDD"
+                    },
+                    {
+                        "name": "dateToYYYYMMDD",
+                        "in": "path",
+                        "description": "dateToYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/diff\/objectStatus\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}": {
+            "get": {
+                "summary": "Count difference of objects with given status, for specified species and date range",
+                "description": "",
+                "operationId": "GetObjectStatusDiffUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateFromYYYYMMDD",
+                        "in": "path",
+                        "description": "dateFromYYYYMMDD"
+                    },
+                    {
+                        "name": "dateToYYYYMMDD",
+                        "in": "path",
+                        "description": "dateToYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/diff\/objectWithRefSeq\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}": {
+            "get": {
+                "summary": "Count difference of objects with reference sequence(s), by object type, for specified species and date range",
+                "description": "",
+                "operationId": "GetObjectsWithRefSeqDiffUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateFromYYYYMMDD",
+                        "in": "path",
+                        "description": "dateFromYYYYMMDD"
+                    },
+                    {
+                        "name": "dateToYYYYMMDD",
+                        "in": "path",
+                        "description": "dateToYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/diff\/objectWithReference\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}": {
+            "get": {
+                "summary": "Count difference of objects with reference, by object type, for specified species and date range",
+                "description": "",
+                "operationId": "GetObjectsWithReferenceDiffUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateFromYYYYMMDD",
+                        "in": "path",
+                        "description": "dateFromYYYYMMDD"
+                    },
+                    {
+                        "name": "dateToYYYYMMDD",
+                        "in": "path",
+                        "description": "dateToYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/diff\/objectWithXdb\/{speciesTypeKey}\/{objectKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}": {
+            "get": {
+                "summary": "Count difference of objects with external database ids, by database id, for specified species, object type and date range",
+                "description": "",
+                "operationId": "GetObjectsWithXDBsDiffUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "objectKey",
+                        "in": "path",
+                        "description": "objectKey"
+                    },
+                    {
+                        "name": "dateFromYYYYMMDD",
+                        "in": "path",
+                        "description": "dateFromYYYYMMDD"
+                    },
+                    {
+                        "name": "dateToYYYYMMDD",
+                        "in": "path",
+                        "description": "dateToYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/diff\/proteinInteraction\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}": {
+            "get": {
+                "summary": "Count difference of protein interactions, for specified species and date range",
+                "description": "",
+                "operationId": "GetProteinInteractionDiffUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateFromYYYYMMDD",
+                        "in": "path",
+                        "description": "dateFromYYYYMMDD"
+                    },
+                    {
+                        "name": "dateToYYYYMMDD",
+                        "in": "path",
+                        "description": "dateToYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/diff\/qtlInheritanceType\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}": {
+            "get": {
+                "summary": "Count difference of strains, by qtl inheritance type, for specified species and date range",
+                "description": "",
+                "operationId": "GetQtlInheritanceTypeDiffUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateFromYYYYMMDD",
+                        "in": "path",
+                        "description": "dateFromYYYYMMDD"
+                    },
+                    {
+                        "name": "dateToYYYYMMDD",
+                        "in": "path",
+                        "description": "dateToYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/diff\/retiredObject\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}": {
+            "get": {
+                "summary": "Count difference of retired objects, by type, for specified species and date range",
+                "description": "",
+                "operationId": "GetRetiredObjectDiffUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateFromYYYYMMDD",
+                        "in": "path",
+                        "description": "dateFromYYYYMMDD"
+                    },
+                    {
+                        "name": "dateToYYYYMMDD",
+                        "in": "path",
+                        "description": "dateToYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/diff\/strainType\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}": {
+            "get": {
+                "summary": "Count difference of strain types, for specified species and date range",
+                "description": "",
+                "operationId": "GetStrainTypeDiffUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateFromYYYYMMDD",
+                        "in": "path",
+                        "description": "dateFromYYYYMMDD"
+                    },
+                    {
+                        "name": "dateToYYYYMMDD",
+                        "in": "path",
+                        "description": "dateToYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/diff\/withdrawnObject\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}": {
+            "get": {
+                "summary": "Count difference of withdrawn objects, by type, for specified species and date range",
+                "description": "",
+                "operationId": "GetWithdrawnObjectDiffUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateFromYYYYMMDD",
+                        "in": "path",
+                        "description": "dateFromYYYYMMDD"
+                    },
+                    {
+                        "name": "dateToYYYYMMDD",
+                        "in": "path",
+                        "description": "dateToYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/diff\/xdb\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}": {
+            "get": {
+                "summary": "Count difference of external database ids, for specified species and date range",
+                "description": "",
+                "operationId": "GetXdbsDiffUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "speciesTypeKey",
+                        "in": "path",
+                        "description": "A list of species type keys can be found using the lookup service"
+                    },
+                    {
+                        "name": "dateFromYYYYMMDD",
+                        "in": "path",
+                        "description": "dateFromYYYYMMDD"
+                    },
+                    {
+                        "name": "dateToYYYYMMDD",
+                        "in": "path",
+                        "description": "dateToYYYYMMDD"
+                    }
+                ]
+            }
+        },
+        "\/stats\/term\/{accId}\/{filterAccId}": {
+            "get": {
+                "summary": "getTermStats",
+                "description": "",
+                "operationId": "GetTermStatsUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accId",
+                        "in": "path",
+                        "description": "Ontology term accession ID"
+                    },
+                    {
+                        "name": "filterAccId",
+                        "in": "path",
+                        "description": "filterAccId"
+                    }
+                ]
+            }
+        },
+        "\/strains\/all": {
+            "get": {
+                "summary": "Return all active strains in RGD",
+                "description": "",
+                "operationId": "GetAllStrainsUsingGET",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/strains\/{chr}\/{start}\/{stop}\/{mapKey}": {
+            "get": {
+                "summary": "Return all active strains by position",
+                "description": "",
+                "operationId": "GetStrainsByPositionUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "chr",
+                        "in": "path",
+                        "description": "Chromosome"
+                    },
+                    {
+                        "name": "start",
+                        "in": "path",
+                        "description": "Start Position"
+                    },
+                    {
+                        "name": "stop",
+                        "in": "path",
+                        "description": "Stop Position"
+                    },
+                    {
+                        "name": "mapKey",
+                        "in": "path",
+                        "description": "A list of RGD assembly map keys can be found in the lookup service"
+                    }
+                ]
+            }
+        },
+        "\/strains\/{rgdId}": {
+            "get": {
+                "summary": "Return a strain by RGD ID",
+                "description": "",
+                "operationId": "GetStrainByRgdIdUsingGET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "rgdId",
+                        "in": "path",
+                        "description": "RGD ID"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Annotation": {
+                "type": "object",
+                "properties": {
+                    "annotatedObjectRgdId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "aspect": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdBy": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "createdDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "dataSrc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "evidence": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "expRgdId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "key": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastModifiedBy": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastModifiedDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "objectName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "objectSymbol": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "qualifier": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "refRgdId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "relativeTo": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "rgdObjectKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "speciesTypeKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "term": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "termAcc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "withInfo": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "xrefSource": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Gene": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "function": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "key": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ncbiAnnotStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "nomenReviewDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "product": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "refSeqStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "rgdId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "soAccId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "speciesTypeKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "symbol": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "variant": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Map": {
+                "type": "object",
+                "properties": {
+                    "dbsnpVersion": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "key": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "methodKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "primaryRefAssembly": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "rank": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "rgdId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "speciesTypeKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ucscAssemblyId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "unit": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "version": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "MapPair": {
+                "type": "object",
+                "properties": {
+                    "keyValue": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "stringValue": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "MappedGene": {
+                "type": "object",
+                "properties": {
+                    "chromosome": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "mapKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "start": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "stop": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "strand": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Pathway": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "hasAlteredPath": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "objectList": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "pathwayCategories": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "referenceList": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "PathwayObject": {
+                "type": "object",
+                "properties": {
+                    "accId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "objDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "objName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "typeId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "typeName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "xdb_key": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "QTL": {
+                "type": "object",
+                "properties": {
+                    "chromosome": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "flank1RgdId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "flank2RgdId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "inheritanceType": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "key": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "linkageImage": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lod": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lodImage": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "mostSignificantCmoTerm": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "peakOffset": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "peakRgdId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "pvalue": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "rgdId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "sourceUrl": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "speciesTypeKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "symbol": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "variance": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Reference": {
+                "type": "object",
+                "properties": {
+                    "citation": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "doi": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "editors": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "issue": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "key": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "pages": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "pubDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "pubStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "publication": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "publisher": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "publisherCity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "refAbstract": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "referenceType": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "rgdId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "speciesTypeKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "urlWebReference": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "volume": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Status": {
+                "type": "object",
+                "properties": {
+                    "cryopreservedEmbryo": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "cryopreservedSperm": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "cryorecovery": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "key": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "liveAnimals": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "statusDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "strainRgdId": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Strain": {
+                "type": "object",
+                "properties": {
+                    "backgroundStrainRgdId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "chrAltered": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "color": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "geneticStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "genetics": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "imageUrl": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "inbredGen": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "key": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lastStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "modificationMethod": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "notes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "origin": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "researchUse": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "rgdId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "source": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "speciesTypeKey": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "statusLog": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "strain": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "strainTypeName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "substrain": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "symbol": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
