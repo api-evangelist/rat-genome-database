@@ -1,0 +1,2173 @@
+{
+    "id": "7d25602aab29ceed5f24d020568b3840",
+    "name": "Rat Genome Database",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "f4bb169b17c96cc6e861642259780de6",
+            "name": "Returns a list ontology term accession IDs annotated to an rgd object",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/accId\/{rgdId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "rgdId",
+                    "description": "RGD ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "3d32834bc4f43596250c358cd15a527d",
+            "name": "Returns annotation count for ontology accession ID",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/count\/{accId}\/{includeChildren}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "accId",
+                    "description": "Ontology term accession ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includeChildren",
+                    "description": "true: return annotations for the term and children, false: return annotations for the term only ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "c84aebea921db52fc60cc13198f1563f",
+            "name": "Returns annotation count for ontology accession ID and speicies",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/count\/{accId}\/{speciesTypeKey}\/{includeChildren}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "accId",
+                    "description": "Ontology term accession ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includeChildren",
+                    "description": "true: return annotations for the term and children, false: return annotations for the term only ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "dbf45992532f8ec28abf42f1e0a7c999",
+            "name": "Returns annotation count for ontology accession ID and object type",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/count\/{accId}\/{speciesTypeKey}\/{includeChildren}\/{objectType}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "accId",
+                    "description": "Ontology term accession ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includeChildren",
+                    "description": "true: return annotations for the term and children, false: return annotations for the term only ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "objectType",
+                    "description": "A list of object types can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "8e5b40531575ecb77a0b4e2fcd7ab5ab",
+            "name": "Returns a list of annotations for a reference",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/reference\/{refRgdId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "refRgdId",
+                    "description": "Reference RGD ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "98f0cb64c32a5073765f084f2da66ab0",
+            "name": "Returns a list of annotations by RGD ID",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/rgdId\/{rgdId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "rgdId",
+                    "description": "RGD ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "8737b33ee6418ff666d4094b5ea26fd8",
+            "name": "Returns a list of annotations by RGD ID and ontology prefix",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/rgdId\/{rgdId}\/{ontologyPrefix}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "rgdId",
+                    "description": "RGD ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ontologyPrefix",
+                    "description": "Ontology Prefix.  The prefix can be found left of the semicolon in an ontology term accession ID.  As an example, term accession PW:0000034 has the ontology prefix PW",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "5fb9abd52793dfe479f043e92cb672c5",
+            "name": "Returns a list of annotations by RGD ID and ontology term accession ID",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/{accId}\/{rgdId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "accId",
+                    "description": "Ontology term accession ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rgdId",
+                    "description": "RGD ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "008e69557e453613260f05032bfd843d",
+            "name": "Returns a list annotations for an ontology term or a term and it's children",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/{accId}\/{speciesTypeKey}\/{includeChildren}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "accId",
+                    "description": "Ontology term accession ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includeChildren",
+                    "description": "true: return annotations for the term and children, false: return annotations for the term only ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "8c0b02bf5a78e27e88587fe5efee5827",
+            "name": "Return a list of genes for an affymetrix ID",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/affyId\/{affyId}\/{speciesTypeKey}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "affyId",
+                    "description": "Affymetrix ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "af1798df676de53f77d878b07471430b",
+            "name": "Return a list of genes for an alias and species",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/alias\/{aliasSymbol}\/{speciesTypeKey}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "aliasSymbol",
+                    "description": "Gene alias symbol",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "23595b9b8bf939c93fa2d44989936e33",
+            "name": "Return a list of gene alleles",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/allele\/{rgdId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "rgdId",
+                    "description": "RGD ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "0d2cb83ec23fdebd19bac7a21950bd9e",
+            "name": "Return a list of genes annotated to an ontology term",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/annotation\/{accId}\/{speciesTypeKey}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "accId",
+                    "description": "Ontology term accession ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "80e96cda53d7560eaa807618712ca37f",
+            "name": "Return a list of genes by keyword and species type key",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/keyword\/{keyword}\/{speciesTypeKey}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "keyword",
+                    "description": "Search keyword",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "e08869f20a1a85d65d71cb44bf538500",
+            "name": "Return a list of all genes with position information for an assembly",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/map\/{mapKey}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "mapKey",
+                    "description": "A list of RGD assembly map keys can be found in the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "b8ed9fa9f533e458ea27bf78a77a9a41",
+            "name": "Return a list of gene orthologs",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/ortholog\/{rgdId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "rgdId",
+                    "description": "RGD ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "d23a08ef711178ce44a5e6a5b6eb555c",
+            "name": "Return a list of all genes for a species in RGD",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/species\/{speciesTypeKey}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "714533259b9a27d2533a0c9a8446e54f",
+            "name": "Return a list of genes position and map key",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/{chr}\/{start}\/{stop}\/{mapKey}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "chr",
+                    "description": "Chromosome",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start",
+                    "description": "Start Position",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stop",
+                    "description": "Stop Position",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "mapKey",
+                    "description": "A list of RGD assembly map keys can be found in the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "6b9dcc8ab3267c94e9801c4d11b04138",
+            "name": "Get a gene record by RGD ID",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/{rgdId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "rgdId",
+                    "description": "RGD ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "4f75f9423e29500d9e1cc4cf0dd45d5b",
+            "name": "Get a gene record by symbol and species type key",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/{symbol}\/{speciesTypeKey}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "symbol",
+                    "description": "Gene Symbol",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "8160e9f6c39cbef52eced9e30f8d92ef",
+            "name": "Returns a list of gene types avialable in RGD",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/lookup\/geneTypes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "c6b12939527dff859aca44251d39060d",
+            "name": "Return a list assembly maps for a species",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/lookup\/maps\/{speciesTypeKey}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "494cb9b52fd443d910942e2dcc0ce901",
+            "name": "Return a Map of species type keys available in RGD",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/lookup\/speciesTypeKeys",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "6acd9307523b752daf353b1f68bd55b4",
+            "name": "Return a list of pathways based on search term",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/pathways\/diagrams\/search\/{searchString}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "searchString",
+                    "description": "Free text search string",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "72f2cf6bc9df1497ed4f0f44d0e3592a",
+            "name": "Return a list of pathways based on category provided",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/pathways\/diagramsForCategory\/{category}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "category",
+                    "description": "Pathway Category",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "5319f9182409a077d075c54e170e1596",
+            "name": "Return a list of pathways based on search term and species type.  3=rat 4=chinchilla",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/phenotype\/phenominer\/chart\/{speciesTypeKey}\/{termString}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "termString",
+                    "description": "List of term accession IDs",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "66af4096ff2e55ccd99c2d22a9d8004b",
+            "name": "Returns a list QTL for given position and assembly map",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/qtls\/{chr}\/{start}\/{stop}\/{mapKey}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "chr",
+                    "description": "Chromosome",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start",
+                    "description": "Start Position",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stop",
+                    "description": "Stop Position",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "mapKey",
+                    "description": "A list of RGD assembly map keys can be found in the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "22e1b74526641cec641c15d8fa24318d",
+            "name": "Return a QTL for provided RGD ID",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/qtls\/{rgdId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "rgdId",
+                    "description": "RGD ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "614d236a87b3039221812a0cd2bd35c9",
+            "name": "Count of active objects by type, for specified species and date",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/activeObject\/{speciesTypeKey}\/{dateYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateYYYYMMDD",
+                    "description": "dateYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "bc998167a3f7b8b505972f646779c5b0",
+            "name": "Count of gene types, for specified species and date",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/geneType\/{speciesTypeKey}\/{dateYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateYYYYMMDD",
+                    "description": "dateYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "200da2add0294d0af4cfe58c411643aa",
+            "name": "Count of objects with given status, for specified species and date",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/objectStatus\/{speciesTypeKey}\/{dateYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateYYYYMMDD",
+                    "description": "dateYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "3840c8f23350b064718922bb83f26b68",
+            "name": "Count of objects with reference sequence(s), by object type, for specified species and date",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/objectWithRefSeq\/{speciesTypeKey}\/{dateYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateYYYYMMDD",
+                    "description": "dateYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "c4b73a7372f996d9c283305798bf4f17",
+            "name": "Count of objects with reference, by object type, for specified species and date",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/objectWithReference\/{speciesTypeKey}\/{dateYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateYYYYMMDD",
+                    "description": "dateYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "c47a628c1f8da2e4d3cb50fcb7893544",
+            "name": "Count of objects with external database ids, by database id, for specified species, object type and date",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/objectWithXdb\/{speciesTypeKey}\/{objectKey}\/{dateYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "objectKey",
+                    "description": "objectKey",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateYYYYMMDD",
+                    "description": "dateYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "822fd3f92cd26d4ffb12bf4dbd482af3",
+            "name": "Count of protein interactions, for specified species and date",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/proteinInteraction\/{speciesTypeKey}\/{dateYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateYYYYMMDD",
+                    "description": "dateYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "07d054bdf6ef007e44fa7d90a7c19e50",
+            "name": "Count of strains, by qtl inheritance type, for specified species and date",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/qtlInheritanceType\/{speciesTypeKey}\/{dateYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateYYYYMMDD",
+                    "description": "dateYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "c4c2b9081c88bfaf4952e5a6218395ac",
+            "name": "Count of retired objects by type, for specified species and date",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/retiredObject\/{speciesTypeKey}\/{dateYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateYYYYMMDD",
+                    "description": "dateYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "2fac8fdf7e63fd5ba5eb0741d19f8d40",
+            "name": "Count of strain types, for specified species and date",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/strainType\/{speciesTypeKey}\/{dateYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateYYYYMMDD",
+                    "description": "dateYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "58b1cd32ce92f753cdfd2170bcb41e82",
+            "name": "Count of withdrawn objects by type, for specified species and date",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/withdrawnObject\/{speciesTypeKey}\/{dateYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateYYYYMMDD",
+                    "description": "dateYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "ab74c081f8903bc107d794bb50a45fe3",
+            "name": "Count of external database ids, for specied species and date",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/xdb\/{speciesTypeKey}\/{dateYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateYYYYMMDD",
+                    "description": "dateYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "87b332c1f964f180809175f55d4b99ce",
+            "name": "Count difference of active objects, by type, for specified species and date range",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/activeObject\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateFromYYYYMMDD",
+                    "description": "dateFromYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateToYYYYMMDD",
+                    "description": "dateToYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "c1a7148da376cc91eaff98e18a65991d",
+            "name": "Count difference of gene types, for specified species and date range",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/geneType\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateFromYYYYMMDD",
+                    "description": "dateFromYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateToYYYYMMDD",
+                    "description": "dateToYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "a9a3c414554dd1220409fe9e1f641549",
+            "name": "Count difference of objects with given status, for specified species and date range",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/objectStatus\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateFromYYYYMMDD",
+                    "description": "dateFromYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateToYYYYMMDD",
+                    "description": "dateToYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "f4ce611ad8d84902e60cfa23d8f7065c",
+            "name": "Count difference of objects with reference sequence(s), by object type, for specified species and date range",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/objectWithRefSeq\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateFromYYYYMMDD",
+                    "description": "dateFromYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateToYYYYMMDD",
+                    "description": "dateToYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "59339c5647c85eeab05d521b08307253",
+            "name": "Count difference of objects with reference, by object type, for specified species and date range",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/objectWithReference\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateFromYYYYMMDD",
+                    "description": "dateFromYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateToYYYYMMDD",
+                    "description": "dateToYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "7454531272734109e344ac366fec904e",
+            "name": "Count difference of objects with external database ids, by database id, for specified species, object type and date range",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/objectWithXdb\/{speciesTypeKey}\/{objectKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "objectKey",
+                    "description": "objectKey",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateFromYYYYMMDD",
+                    "description": "dateFromYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateToYYYYMMDD",
+                    "description": "dateToYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "d4f671103e0deee713aab141612b839d",
+            "name": "Count difference of protein interactions, for specified species and date range",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/proteinInteraction\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateFromYYYYMMDD",
+                    "description": "dateFromYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateToYYYYMMDD",
+                    "description": "dateToYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "3e58f005d084e25c4bededb7076f14dc",
+            "name": "Count difference of strains, by qtl inheritance type, for specified species and date range",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/qtlInheritanceType\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateFromYYYYMMDD",
+                    "description": "dateFromYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateToYYYYMMDD",
+                    "description": "dateToYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "5bf53a38370d3d8a6ab28d28d73a85c6",
+            "name": "Count difference of retired objects, by type, for specified species and date range",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/retiredObject\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateFromYYYYMMDD",
+                    "description": "dateFromYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateToYYYYMMDD",
+                    "description": "dateToYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "bc9012f128757a641d70e1696f488187",
+            "name": "Count difference of strain types, for specified species and date range",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/strainType\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateFromYYYYMMDD",
+                    "description": "dateFromYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateToYYYYMMDD",
+                    "description": "dateToYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "e068f1ccd65d6bda4e8f898e540710e0",
+            "name": "Count difference of withdrawn objects, by type, for specified species and date range",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/withdrawnObject\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateFromYYYYMMDD",
+                    "description": "dateFromYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateToYYYYMMDD",
+                    "description": "dateToYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "c9736c261d75938fd327cba8f26a15b8",
+            "name": "Count difference of external database ids, for specified species and date range",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/xdb\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "speciesTypeKey",
+                    "description": "A list of species type keys can be found using the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateFromYYYYMMDD",
+                    "description": "dateFromYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateToYYYYMMDD",
+                    "description": "dateToYYYYMMDD",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "be24113e444f72ee785fb91fe91c55fe",
+            "name": "getTermStats",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/term\/{accId}\/{filterAccId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "accId",
+                    "description": "Ontology term accession ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filterAccId",
+                    "description": "filterAccId",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "99cf1b676ec1f0645d30fb1d27b11b52",
+            "name": "Return all active strains in RGD",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/strains\/all",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "c2a1a4a99784c3b9fc1cad2efedd521b",
+            "name": "Return all active strains by position",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/strains\/{chr}\/{start}\/{stop}\/{mapKey}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "chr",
+                    "description": "Chromosome",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start",
+                    "description": "Start Position",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stop",
+                    "description": "Stop Position",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "mapKey",
+                    "description": "A list of RGD assembly map keys can be found in the lookup service",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        },
+        {
+            "id": "1009431bb6f032185c1ce02f0dd42357",
+            "name": "Return a strain by RGD ID",
+            "url": "httpsrest.rgd.mcw.edu\/rgdws\/strains\/{rgdId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "rgdId",
+                    "description": "RGD ID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "rawModeData": ""
+        }
+    ]
+}
