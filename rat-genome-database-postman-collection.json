@@ -1,5 +1,5 @@
 {
-    "id": "7d25602aab29ceed5f24d020568b3840",
+    "id": "7f9ba7b20c045b1c955c7c40da5cfeb8",
     "name": "Rat Genome Database",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "f4bb169b17c96cc6e861642259780de6",
+            "id": "77e5175a6e419fe59cacfc9c32b9904d",
             "name": "Returns a list ontology term accession IDs annotated to an rgd object",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/accId\/{rgdId}",
             "description": "",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "3d32834bc4f43596250c358cd15a527d",
+            "id": "2c50bcf7dea19f2797a74560b3fab5d2",
             "name": "Returns annotation count for ontology accession ID",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/count\/{accId}\/{includeChildren}",
             "description": "",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "c84aebea921db52fc60cc13198f1563f",
+            "id": "fb70f52fa3e74a1c6d566a9544e10c6f",
             "name": "Returns annotation count for ontology accession ID and speicies",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/count\/{accId}\/{speciesTypeKey}\/{includeChildren}",
             "description": "",
@@ -120,11 +120,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "dbf45992532f8ec28abf42f1e0a7c999",
+            "id": "94f94597f6708334e3619868dfce22e3",
             "name": "Returns annotation count for ontology accession ID and object type",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/count\/{accId}\/{speciesTypeKey}\/{includeChildren}\/{objectType}",
             "description": "",
@@ -172,11 +172,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "8e5b40531575ecb77a0b4e2fcd7ab5ab",
+            "id": "19131ac1c960cf3908908eb8e58ae7c5",
             "name": "Returns a list of annotations for a reference",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/reference\/{refRgdId}",
             "description": "",
@@ -203,11 +203,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "98f0cb64c32a5073765f084f2da66ab0",
+            "id": "80cc18987c58ea903a9fceafeff2ae29",
             "name": "Returns a list of annotations by RGD ID",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/rgdId\/{rgdId}",
             "description": "",
@@ -234,11 +234,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "8737b33ee6418ff666d4094b5ea26fd8",
+            "id": "67a3130e691dde621e8c1d5923155e18",
             "name": "Returns a list of annotations by RGD ID and ontology prefix",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/rgdId\/{rgdId}\/{ontologyPrefix}",
             "description": "",
@@ -272,11 +272,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "5fb9abd52793dfe479f043e92cb672c5",
+            "id": "21c655070e1b0a8716f1624b9612eb3c",
             "name": "Returns a list of annotations by RGD ID and ontology term accession ID",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/{accId}\/{rgdId}",
             "description": "",
@@ -310,11 +310,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "008e69557e453613260f05032bfd843d",
+            "id": "f5a8cfb72d5366eb77021b74aca8e97d",
             "name": "Returns a list annotations for an ontology term or a term and it's children",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/annotations\/{accId}\/{speciesTypeKey}\/{includeChildren}",
             "description": "",
@@ -355,11 +355,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "8c0b02bf5a78e27e88587fe5efee5827",
+            "id": "e76c742dd7d5e077aef6ef130e6f3330",
             "name": "Return a list of genes for an affymetrix ID",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/affyId\/{affyId}\/{speciesTypeKey}",
             "description": "",
@@ -393,11 +393,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "af1798df676de53f77d878b07471430b",
+            "id": "bf5d108542903e9d0a2294cf6aecb48b",
             "name": "Return a list of genes for an alias and species",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/alias\/{aliasSymbol}\/{speciesTypeKey}",
             "description": "",
@@ -431,11 +431,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "23595b9b8bf939c93fa2d44989936e33",
+            "id": "c65fc63ec00b59e64f57f33c17e6f45c",
             "name": "Return a list of gene alleles",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/allele\/{rgdId}",
             "description": "",
@@ -462,11 +462,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "0d2cb83ec23fdebd19bac7a21950bd9e",
+            "id": "08414e05beb8b2994ebcd1ba0fd763d2",
             "name": "Return a list of genes annotated to an ontology term",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/annotation\/{accId}\/{speciesTypeKey}",
             "description": "",
@@ -500,11 +500,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "80e96cda53d7560eaa807618712ca37f",
+            "id": "5826104422f09c6095ee6816cd320d49",
             "name": "Return a list of genes by keyword and species type key",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/keyword\/{keyword}\/{speciesTypeKey}",
             "description": "",
@@ -538,11 +538,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "e08869f20a1a85d65d71cb44bf538500",
+            "id": "ef45d51e979a56ded4240129a3e97e09",
             "name": "Return a list of all genes with position information for an assembly",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/map\/{mapKey}",
             "description": "",
@@ -569,11 +569,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "b8ed9fa9f533e458ea27bf78a77a9a41",
+            "id": "978a1739cc5a59b7955a4491972c245d",
             "name": "Return a list of gene orthologs",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/ortholog\/{rgdId}",
             "description": "",
@@ -600,11 +600,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "d23a08ef711178ce44a5e6a5b6eb555c",
+            "id": "504c4d32707c5fd999b5aacf6ae4fbde",
             "name": "Return a list of all genes for a species in RGD",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/species\/{speciesTypeKey}",
             "description": "",
@@ -631,11 +631,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "714533259b9a27d2533a0c9a8446e54f",
+            "id": "fab49787c2bade18c9588546d80b8658",
             "name": "Return a list of genes position and map key",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/{chr}\/{start}\/{stop}\/{mapKey}",
             "description": "",
@@ -683,11 +683,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "6b9dcc8ab3267c94e9801c4d11b04138",
+            "id": "f2a67fe51813ea792327d19e67c4d98c",
             "name": "Get a gene record by RGD ID",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/{rgdId}",
             "description": "",
@@ -714,11 +714,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "4f75f9423e29500d9e1cc4cf0dd45d5b",
+            "id": "c141b2edb4a2cd7231e2f2e7222a25b1",
             "name": "Get a gene record by symbol and species type key",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/genes\/{symbol}\/{speciesTypeKey}",
             "description": "",
@@ -752,11 +752,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "8160e9f6c39cbef52eced9e30f8d92ef",
+            "id": "3194dfde3a629dcd1516a03ef32a27af",
             "name": "Returns a list of gene types avialable in RGD",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/lookup\/geneTypes",
             "description": "",
@@ -775,11 +775,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "c6b12939527dff859aca44251d39060d",
+            "id": "fb1ad08edc6d63b09a589d015607eb2a",
             "name": "Return a list assembly maps for a species",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/lookup\/maps\/{speciesTypeKey}",
             "description": "",
@@ -806,11 +806,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "494cb9b52fd443d910942e2dcc0ce901",
+            "id": "34f3d2398ed1f48f558faea9aab0114e",
             "name": "Return a Map of species type keys available in RGD",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/lookup\/speciesTypeKeys",
             "description": "",
@@ -829,11 +829,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "6acd9307523b752daf353b1f68bd55b4",
+            "id": "7352eb0b7e8b8acd5af70cc7f5fc6b51",
             "name": "Return a list of pathways based on search term",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/pathways\/diagrams\/search\/{searchString}",
             "description": "",
@@ -860,11 +860,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "72f2cf6bc9df1497ed4f0f44d0e3592a",
+            "id": "2853142dee09f85db6f005343fb9319b",
             "name": "Return a list of pathways based on category provided",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/pathways\/diagramsForCategory\/{category}",
             "description": "",
@@ -891,11 +891,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "5319f9182409a077d075c54e170e1596",
+            "id": "f3f87dbde85114a447bf0d006e34d035",
             "name": "Return a list of pathways based on search term and species type.  3=rat 4=chinchilla",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/phenotype\/phenominer\/chart\/{speciesTypeKey}\/{termString}",
             "description": "",
@@ -929,11 +929,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "66af4096ff2e55ccd99c2d22a9d8004b",
+            "id": "862686036f10af5d8e4366fec9a1f275",
             "name": "Returns a list QTL for given position and assembly map",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/qtls\/{chr}\/{start}\/{stop}\/{mapKey}",
             "description": "",
@@ -981,11 +981,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "22e1b74526641cec641c15d8fa24318d",
+            "id": "64bec2ca27b8e9b78a14243b608392e5",
             "name": "Return a QTL for provided RGD ID",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/qtls\/{rgdId}",
             "description": "",
@@ -1012,11 +1012,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "614d236a87b3039221812a0cd2bd35c9",
+            "id": "6fa92bbac77c44c9cd60e294018b23cf",
             "name": "Count of active objects by type, for specified species and date",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/activeObject\/{speciesTypeKey}\/{dateYYYYMMDD}",
             "description": "",
@@ -1050,11 +1050,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "bc998167a3f7b8b505972f646779c5b0",
+            "id": "794eeefa4320567904d0ac628d7101d1",
             "name": "Count of gene types, for specified species and date",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/geneType\/{speciesTypeKey}\/{dateYYYYMMDD}",
             "description": "",
@@ -1088,11 +1088,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "200da2add0294d0af4cfe58c411643aa",
+            "id": "5d482e6120488be08f5155826f29a16e",
             "name": "Count of objects with given status, for specified species and date",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/objectStatus\/{speciesTypeKey}\/{dateYYYYMMDD}",
             "description": "",
@@ -1126,11 +1126,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "3840c8f23350b064718922bb83f26b68",
+            "id": "de16f91331fab511a547739265785a3d",
             "name": "Count of objects with reference sequence(s), by object type, for specified species and date",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/objectWithRefSeq\/{speciesTypeKey}\/{dateYYYYMMDD}",
             "description": "",
@@ -1164,11 +1164,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "c4b73a7372f996d9c283305798bf4f17",
+            "id": "1d0df541866883eee28f42ce7145d938",
             "name": "Count of objects with reference, by object type, for specified species and date",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/objectWithReference\/{speciesTypeKey}\/{dateYYYYMMDD}",
             "description": "",
@@ -1202,11 +1202,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "c47a628c1f8da2e4d3cb50fcb7893544",
+            "id": "640450097ad9a0640db37446dd16d14e",
             "name": "Count of objects with external database ids, by database id, for specified species, object type and date",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/objectWithXdb\/{speciesTypeKey}\/{objectKey}\/{dateYYYYMMDD}",
             "description": "",
@@ -1247,11 +1247,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "822fd3f92cd26d4ffb12bf4dbd482af3",
+            "id": "abe05d1f94af7b6c437d0bff6ab78599",
             "name": "Count of protein interactions, for specified species and date",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/proteinInteraction\/{speciesTypeKey}\/{dateYYYYMMDD}",
             "description": "",
@@ -1285,11 +1285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "07d054bdf6ef007e44fa7d90a7c19e50",
+            "id": "562d89b4b9c47b7d3c5acb25468ff05c",
             "name": "Count of strains, by qtl inheritance type, for specified species and date",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/qtlInheritanceType\/{speciesTypeKey}\/{dateYYYYMMDD}",
             "description": "",
@@ -1323,11 +1323,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "c4c2b9081c88bfaf4952e5a6218395ac",
+            "id": "950cd7d397d82af926f0e51e0e3c2490",
             "name": "Count of retired objects by type, for specified species and date",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/retiredObject\/{speciesTypeKey}\/{dateYYYYMMDD}",
             "description": "",
@@ -1361,11 +1361,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "2fac8fdf7e63fd5ba5eb0741d19f8d40",
+            "id": "10f61080192046bbc0bee5415dd94d61",
             "name": "Count of strain types, for specified species and date",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/strainType\/{speciesTypeKey}\/{dateYYYYMMDD}",
             "description": "",
@@ -1399,11 +1399,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "58b1cd32ce92f753cdfd2170bcb41e82",
+            "id": "4f8c5676a1d388889c31e0f3d4441210",
             "name": "Count of withdrawn objects by type, for specified species and date",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/withdrawnObject\/{speciesTypeKey}\/{dateYYYYMMDD}",
             "description": "",
@@ -1437,11 +1437,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "ab74c081f8903bc107d794bb50a45fe3",
+            "id": "cbacdf45a992f1733f924c17ae2cefa3",
             "name": "Count of external database ids, for specied species and date",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/count\/xdb\/{speciesTypeKey}\/{dateYYYYMMDD}",
             "description": "",
@@ -1475,11 +1475,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "87b332c1f964f180809175f55d4b99ce",
+            "id": "9f1f0ff24dc2699c1d1c2691a4bf54b9",
             "name": "Count difference of active objects, by type, for specified species and date range",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/activeObject\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
             "description": "",
@@ -1520,11 +1520,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "c1a7148da376cc91eaff98e18a65991d",
+            "id": "c57c558b432661b8b61987b7961c0411",
             "name": "Count difference of gene types, for specified species and date range",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/geneType\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
             "description": "",
@@ -1565,11 +1565,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "a9a3c414554dd1220409fe9e1f641549",
+            "id": "1bdd7f84b76bb8a01f9c6dedce37374c",
             "name": "Count difference of objects with given status, for specified species and date range",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/objectStatus\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
             "description": "",
@@ -1610,11 +1610,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "f4ce611ad8d84902e60cfa23d8f7065c",
+            "id": "bd8178ce349ef0007b82b57edff9f264",
             "name": "Count difference of objects with reference sequence(s), by object type, for specified species and date range",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/objectWithRefSeq\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
             "description": "",
@@ -1655,11 +1655,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "59339c5647c85eeab05d521b08307253",
+            "id": "5ea4d93b6e8c0074785efc4acc341076",
             "name": "Count difference of objects with reference, by object type, for specified species and date range",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/objectWithReference\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
             "description": "",
@@ -1700,11 +1700,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "7454531272734109e344ac366fec904e",
+            "id": "5f4d658f17256dfa120f4acb163460d0",
             "name": "Count difference of objects with external database ids, by database id, for specified species, object type and date range",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/objectWithXdb\/{speciesTypeKey}\/{objectKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
             "description": "",
@@ -1752,11 +1752,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "d4f671103e0deee713aab141612b839d",
+            "id": "38c7d7f9b7f09007d0cc2f7f36a0b167",
             "name": "Count difference of protein interactions, for specified species and date range",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/proteinInteraction\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
             "description": "",
@@ -1797,11 +1797,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "3e58f005d084e25c4bededb7076f14dc",
+            "id": "aef085b50871649085663c8b9821049b",
             "name": "Count difference of strains, by qtl inheritance type, for specified species and date range",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/qtlInheritanceType\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
             "description": "",
@@ -1842,11 +1842,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "5bf53a38370d3d8a6ab28d28d73a85c6",
+            "id": "7aadd0ba40431441820ea385b1e85f60",
             "name": "Count difference of retired objects, by type, for specified species and date range",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/retiredObject\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
             "description": "",
@@ -1887,11 +1887,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "bc9012f128757a641d70e1696f488187",
+            "id": "c3164b0f4c3c12fce39a991fc4e0daea",
             "name": "Count difference of strain types, for specified species and date range",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/strainType\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
             "description": "",
@@ -1932,11 +1932,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "e068f1ccd65d6bda4e8f898e540710e0",
+            "id": "a1866ac60b44fbb956e0b7c5242f110d",
             "name": "Count difference of withdrawn objects, by type, for specified species and date range",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/withdrawnObject\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
             "description": "",
@@ -1977,11 +1977,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "c9736c261d75938fd327cba8f26a15b8",
+            "id": "11ab629b2f4ef13d567d769876fc92f0",
             "name": "Count difference of external database ids, for specified species and date range",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/diff\/xdb\/{speciesTypeKey}\/{dateFromYYYYMMDD}\/{dateToYYYYMMDD}",
             "description": "",
@@ -2022,11 +2022,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "be24113e444f72ee785fb91fe91c55fe",
+            "id": "462de45740a1c865659e704bc08ba424",
             "name": "getTermStats",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/stats\/term\/{accId}\/{filterAccId}",
             "description": "",
@@ -2060,11 +2060,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "99cf1b676ec1f0645d30fb1d27b11b52",
+            "id": "a155f3464014d4b4cb4ab53bd8100271",
             "name": "Return all active strains in RGD",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/strains\/all",
             "description": "",
@@ -2083,11 +2083,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "c2a1a4a99784c3b9fc1cad2efedd521b",
+            "id": "0785f7c1fd647d4134f1232207d093a6",
             "name": "Return all active strains by position",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/strains\/{chr}\/{start}\/{stop}\/{mapKey}",
             "description": "",
@@ -2135,11 +2135,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         },
         {
-            "id": "1009431bb6f032185c1ce02f0dd42357",
+            "id": "13018c1f574fa5348cca0ed97414dde4",
             "name": "Return a strain by RGD ID",
             "url": "httpsrest.rgd.mcw.edu\/rgdws\/strains\/{rgdId}",
             "description": "",
@@ -2166,7 +2166,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d25602aab29ceed5f24d020568b3840",
+            "collectionId": "7f9ba7b20c045b1c955c7c40da5cfeb8",
             "rawModeData": ""
         }
     ]
